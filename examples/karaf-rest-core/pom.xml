@@ -5,19 +5,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.apache.karaf</groupId>
-        <artifactId>karaf</artifactId>
+        <groupId>org.apache.karaf.examples</groupId>
+        <artifactId>apache-karaf-examples</artifactId>
         <version>4.3.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <groupId>org.apache.karaf.examples</groupId>
-    <artifactId>apache-karaf-examples</artifactId>
-    <name>Apache Karaf :: Examples</name>
+    <artifactId>karaf-rest-core</artifactId>
+    <name>Apache Karaf :: Examples :: CORE</name>
     <packaging>pom</packaging>
 
     <modules>
-        <module>karaf-rest-example</module>
-        <module>karaf-rest-core</module>
+        <module>karaf-rest-core-api</module>
+        <module>karaf-rest-core-blueprint</module>
+        <module>karaf-rest-core-features</module>
     </modules>
+    
 </project>
