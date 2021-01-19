@@ -20,7 +20,7 @@
     </dependencies>
 
     <artifactId>karaf-rest-core-api</artifactId>
-    <name>Apache Karaf :: Examples :: CORE :: API</name>
+    <name>Apache Karaf :: Core :: REST :: API</name>
     <packaging>bundle</packaging>
 
     <build>

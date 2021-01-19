@@ -12,7 +12,7 @@
     </parent>
 
     <artifactId>karaf-rest-core-blueprint</artifactId>
-    <name>Apache Karaf :: Examples :: CORE :: Blueprint</name>
+    <name>Apache Karaf :: Core :: REST :: Blueprint</name>
     <packaging>bundle</packaging>
 
     <dependencies>
