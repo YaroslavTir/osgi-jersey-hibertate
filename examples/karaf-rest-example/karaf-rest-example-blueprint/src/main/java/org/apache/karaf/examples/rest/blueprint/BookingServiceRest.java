@@ -32,8 +32,8 @@ public class BookingServiceRest implements BookingService {
     @Produces("application/json")
     @GET
     public Collection<Booking> list() {
-        return this.bookingRepService.list();
-//        return bookings.values();
+//        return this.bookingRepService.list();
+        return bookings.values();
     }
 
     @Override
