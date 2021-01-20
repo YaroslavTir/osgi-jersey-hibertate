@@ -1,4 +1,4 @@
-package org.apache.karaf.examples.rest.api;
+package org.apache.karaf.core.rest.api;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,7 +8,7 @@ import javax.persistence.Id;
  * A regular POJO.
  */
 @Entity
-public class Booking {
+public class Core {
 
     @Id
     @GeneratedValue

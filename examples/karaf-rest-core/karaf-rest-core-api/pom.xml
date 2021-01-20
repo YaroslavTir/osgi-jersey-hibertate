@@ -30,7 +30,7 @@
                 <artifactId>maven-bundle-plugin</artifactId>
                 <configuration>
                     <instructions>
-                        <Export-Package>org.apache.karaf.examples.rest.api</Export-Package>
+                        <Export-Package>org.apache.karaf.core.rest.api</Export-Package>
                     </instructions>
                 </configuration>
             </plugin>

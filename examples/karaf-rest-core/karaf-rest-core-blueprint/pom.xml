@@ -23,7 +23,7 @@
         </dependency>
         <dependency>
             <groupId>org.apache.karaf.examples</groupId>
-            <artifactId>karaf-rest-example-api</artifactId>
+            <artifactId>karaf-rest-core-api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -50,7 +50,7 @@
                 <artifactId>maven-bundle-plugin</artifactId>
                 <configuration>
                     <instructions>
-                        <Export-Package>org.apache.karaf.examples.rest.blueprint</Export-Package>
+                        <Export-Package>org.apache.karaf.core.rest.blueprint</Export-Package>
                         <Import-Package>
                             *
                         </Import-Package>

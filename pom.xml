@@ -3,7 +3,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.apache.karaf</groupId>
-    <artifactId>karaf</artifactId>
+    <artifactId>karaf-play</artifactId>
     <packaging>pom</packaging>
     <version>4.3.1-SNAPSHOT</version>
     <name>Apache Karaf</name>
