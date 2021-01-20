@@ -4,14 +4,14 @@
              xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 
 
-    <persistence-unit name="core-hibernate" transaction-type="JTA">
+    <persistence-unit name="cohortbuilder-hibernate" transaction-type="JTA">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
         <!-- Only used when transaction-type=JTA -->
-        <jta-data-source>osgi:service/javax.sql.DataSource/(osgi.jndi.service.name=core)</jta-data-source>
+        <jta-data-source>osgi:service/javax.sql.DataSource/(osgi.jndi.service.name=cohortbuilder)</jta-data-source>
 
         <!-- Only used when transaction-type=RESOURCE_LOCAL -->
-        <class>org.apache.karaf.core.rest.api.Module</class>
+        <class>org.apache.karaf.cohortbuilder.rest.api.CohortBuilder</class>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
             <property name="hibernate.hbm2ddl.auto" value="create-drop"/>

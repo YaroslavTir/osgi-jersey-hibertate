@@ -15,16 +15,17 @@
         </cxf:features>
     </cxf:bus>
 
-    <jaxrs:server id="coreRest" address="/core">
+    <jaxrs:server id="criteriaListRest" address="/criterialist">
         <jaxrs:serviceBeans>
-            <ref component-id="coreBean" />
+            <ref component-id="criteriaListBean" />
         </jaxrs:serviceBeans>
         <jaxrs:providers>
             <bean class="com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider"/>
         </jaxrs:providers>
     </jaxrs:server>
 
-    <bean id="coreBean" class="org.apache.karaf.core.rest.blueprint.ModuleServiceRest">
+    <bean id="criteriaListBean" class="org.apache.karaf.criterialist.rest.blueprint.CriteriaListServiceRest">
     </bean>
+
 
 </blueprint>
