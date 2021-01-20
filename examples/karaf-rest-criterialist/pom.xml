@@ -5,21 +5,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.apache.karaf</groupId>
-        <artifactId>karaf</artifactId>
+        <groupId>org.apache.karaf.examples</groupId>
+        <artifactId>apache-karaf-examples</artifactId>
         <version>4.3.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <groupId>org.apache.karaf.examples</groupId>
-    <artifactId>apache-karaf-examples</artifactId>
-    <name>Apache Karaf :: Examples</name>
+    <artifactId>karaf-rest-criterialist</artifactId>
+    <name>Apache Karaf :: Cohort builder :: REST</name>
     <packaging>pom</packaging>
 
     <modules>
-        <module>karaf-rest-example</module>
-        <module>karaf-rest-core</module>
-        <module>karaf-rest-cohortbuilder</module>
-        <module>karaf-rest-criterialist</module>
+        <module>karaf-rest-criterialist-api</module>
+        <module>karaf-rest-criterialist-blueprint</module>
+        <module>karaf-rest-criterialist-features</module>
     </modules>
+    
 </project>
