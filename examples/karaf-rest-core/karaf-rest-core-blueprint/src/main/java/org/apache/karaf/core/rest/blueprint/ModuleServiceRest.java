@@ -1,7 +1,7 @@
 package org.apache.karaf.core.rest.blueprint;
 //import com.google.common.collect.ImmutableSet;
 
-//import com.google.common.collect.ImmutableSet;
+import com.google.common.collect.ImmutableSet;
 import org.apache.karaf.core.rest.api.Module;
 import org.apache.karaf.core.rest.api.ModuleService;
 //import org.junit.Assert;
@@ -34,9 +34,8 @@ public class ModuleServiceRest implements ModuleService {
     @GET
     public Collection<Module> list() {
         System.out.println("test");
-//        Assert.assertTrue(true);
-//        return ImmutableSet.copyOf(modules.values());
-        return modules.values();
+        return ImmutableSet.copyOf(modules.values());
+//        return modules.values();
 
     }
 

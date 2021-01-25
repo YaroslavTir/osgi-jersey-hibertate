@@ -17,9 +17,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>karaf-rest-example</module>
         <module>karaf-rest-core</module>
-        <module>karaf-rest-cohortbuilder</module>
-        <module>karaf-rest-criterialist</module>
     </modules>
 </project>
