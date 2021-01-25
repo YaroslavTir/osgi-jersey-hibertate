@@ -1,19 +1,20 @@
 package org.apache.karaf.core.rest.blueprint;
+//import com.google.common.collect.ImmutableSet;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.function.Function;
-import java.util.stream.Collectors;
+//import com.google.common.collect.ImmutableSet;
+import org.apache.karaf.core.rest.api.Module;
+import org.apache.karaf.core.rest.api.ModuleService;
+//import org.junit.Assert;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
-
-import org.apache.karaf.core.rest.api.Module;
-import org.apache.karaf.core.rest.api.ModuleService;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 @Path("/")
 public class ModuleServiceRest implements ModuleService {
@@ -32,7 +33,11 @@ public class ModuleServiceRest implements ModuleService {
     @Produces("application/json")
     @GET
     public Collection<Module> list() {
+        System.out.println("test");
+//        Assert.assertTrue(true);
+//        return ImmutableSet.copyOf(modules.values());
         return modules.values();
+
     }
 
     @Override
