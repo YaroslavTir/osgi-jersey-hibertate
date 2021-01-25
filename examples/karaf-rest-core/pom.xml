@@ -12,7 +12,7 @@
     </parent>
 
     <artifactId>karaf-rest-core</artifactId>
-    <name>Apache Karaf :: Examples :: CORE</name>
+    <name>Apache Karaf :: Core :: REST</name>
     <packaging>pom</packaging>
 
     <modules>

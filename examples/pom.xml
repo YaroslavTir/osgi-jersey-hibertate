@@ -17,7 +17,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>karaf-rest-example</module>
         <module>karaf-rest-core</module>
     </modules>
 </project>

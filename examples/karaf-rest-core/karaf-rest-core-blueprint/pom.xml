@@ -6,7 +6,7 @@
 
     <parent>
         <groupId>org.apache.karaf.examples</groupId>
-        <artifactId>karaf-rest-example</artifactId>
+        <artifactId>karaf-rest-core</artifactId>
         <version>4.3.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -23,7 +23,7 @@
         </dependency>
         <dependency>
             <groupId>org.apache.karaf.examples</groupId>
-            <artifactId>karaf-rest-example-api</artifactId>
+            <artifactId>karaf-rest-core-api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -41,6 +41,14 @@
             <artifactId>javax.interceptor-api</artifactId>
             <version>1.2</version>
         </dependency>
+
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>29.0-jre</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -50,7 +58,7 @@
                 <artifactId>maven-bundle-plugin</artifactId>
                 <configuration>
                     <instructions>
-                        <Export-Package>org.apache.karaf.examples.rest.blueprint</Export-Package>
+                        <Export-Package>org.apache.karaf.core.rest.blueprint</Export-Package>
                         <Import-Package>
                             *
                         </Import-Package>

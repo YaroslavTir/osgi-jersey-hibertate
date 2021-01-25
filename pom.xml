@@ -3,10 +3,18 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.apache.karaf</groupId>
-    <artifactId>karaf</artifactId>
+    <artifactId>karaf-play</artifactId>
     <packaging>pom</packaging>
     <version>4.3.1-SNAPSHOT</version>
     <name>Apache Karaf</name>
+
+    <repositories>
+        <repository>
+            <id>ohdsi</id>
+            <name>repo.ohdsi.org</name>
+            <url>http://repo.ohdsi.org:8085/nexus/content/groups/public</url>
+        </repository>
+    </repositories>
 
     <modules>
         <module>examples</module>
@@ -43,13 +51,14 @@
         <slf4j.version>1.7.29</slf4j.version>
         <sshd.version>2.5.1</sshd.version>
         <xbean.version>4.18</xbean.version>
+        <lombok.version>1.18.16</lombok.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.16</version>
+            <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
 
